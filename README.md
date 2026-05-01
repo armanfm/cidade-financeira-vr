@@ -1,5 +1,3 @@
-# README.md
-
 # Projeto: Cidade Financeira VR
 
 ## Autor
