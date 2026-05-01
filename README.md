@@ -213,6 +213,59 @@ Cada participante acessaria apenas as informações que lhe pertencem.
 
 ---
 
+## Visão Estratégica do Projeto
+
+Além da implementação técnica em Unity, Cidade Financeira VR também foi pensado como uma proposta de transformação da relação das pessoas com o dinheiro.
+
+A ideia central parte do princípio de que sistemas interativos e experiências semelhantes a jogos costumam gerar maior motivação, constância e interesse no usuário.
+
+Aplicando isso ao contexto financeiro, desafios cotidianos deixam de ser apenas números abstratos e passam a se tornar objetivos claros dentro de uma cidade virtual em evolução.
+
+---
+
+## Filosofia Financeira Aplicada
+
+O projeto prioriza mostrar ao usuário aquilo que realmente importa para sua realidade econômica:
+
+- quanto possui atualmente
+- quanto ganhou
+- quanto gastou
+- quanto precisa pagar
+- como está evoluindo financeiramente
+- quais decisões aumentam seu patrimônio
+
+O foco principal não está em vigiar terceiros, e sim em fortalecer a autonomia financeira do próprio usuário.
+
+---
+
+## Cidade Viva e Reativa
+
+O ambiente virtual pode evoluir de acordo com as decisões financeiras tomadas pelo usuário.
+
+Exemplos:
+
+- aumento de receita gera crescimento patrimonial
+- gastos excessivos reduzem progresso
+- organização financeira libera novas oportunidades
+- estabilidade econômica expande a cidade
+- dívidas atrasam evolução
+
+---
+
+## Expansão Digital Futura
+
+Como visão futura, o projeto também poderá evoluir para uma rede financeira digital privada e segmentada, onde cada participante acessa apenas informações que realmente lhe pertencem ou das quais participa.
+
+Exemplos de relações possíveis:
+
+- cliente ↔ banco
+- cliente ↔ posto de combustível
+- cliente ↔ outro usuário
+- cliente ↔ negócio próprio
+
+Essa proposta amplia privacidade, controle e utilidade prática do ambiente virtual.
+
+
 ## Conclusão
 
 Cidade Financeira VR atende aos requisitos técnicos propostos na atividade ao demonstrar criação de ambiente XR inicial, cena navegável, organização estrutural e interação funcional.
