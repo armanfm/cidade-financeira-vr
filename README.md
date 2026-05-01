@@ -1,148 +1,58 @@
-================================================================
-  CIDADE FINANCEIRA VR
-  Projeto Final - Meu Primeiro Ambiente VR
-  Curso de Realidade Virtual / XR - Fase 1
-================================================================
+# README.md
 
-AUTOR
------
+# Projeto: Cidade Financeira VR
+
+## Autor
 Armando Freire
 
+---
 
-REPOSITÓRIO
------------
+## Visão Geral
 
+Cidade Financeira VR é uma experiência interativa desenvolvida na Unity que transforma conceitos financeiros do cotidiano em objetos visuais dentro de uma cidade virtual.
 
-================================================================
-DESCRIÇÃO DO PROJETO
-================================================================
+O objetivo do projeto é representar entradas, saídas, patrimônio e decisões financeiras por meio de interação direta com elementos 3D do cenário.
 
-A Cidade Financeira VR é uma simulação de ambiente urbano
-interativo onde conceitos financeiros do cotidiano são
-representados como objetos físicos 3D navegáveis.
+---
 
-O objetivo é tornar visível o que normalmente só existe em
-planilhas e extratos bancários — transformando fluxo de caixa,
-custos operacionais e geração de renda em objetos que o usuário
-pode ver e explorar em Realidade Virtual.
+## Conceito Principal
 
-CONCEITO DA CENA:
-  Carro       → representa geração de renda (ativo produtivo)
-  Posto       → representa custo operacional (despesa recorrente)
-  Estrada     → representa o fluxo entre receita e gasto
-  Prédios     → representam patrimônio acumulado
-  Painel      → exibe o saldo (fluxo de caixa visível)
+No ambiente virtual, cada objeto possui significado econômico:
 
-================================================================
-OBJETOS 3D NA CENA (mínimo exigido: 5)
-================================================================
+- **Carro** = geração de receita  
+- **Posto** = despesas operacionais  
+- **Cidade** = evolução patrimonial  
+- **Saldo** = resultado financeiro atual
 
-  1. Plano de chão (Ground Plane)
-     → Terreno principal da cidade, material asfaltado
+O usuário aprende e administra recursos de forma visual, prática e intuitiva.
 
-  2. Carro (Vehicle)
-     → Objeto principal — ativo gerador de renda
-     → Posicionado na estrada central
+---
 
-  3. Posto de Gasolina (Gas Station)
-     → Estrutura com cobertura e bomba
-     → Representa custo operacional fixo
+## Funcionamento Atual
 
-  4. Prédio Comercial (Building_01)
-     → Representa patrimônio / ativo imobiliário
+### Receita
 
-  5. Painel Financeiro (FinanceBoard)
-     → Plano vertical com texto de saldo
-     → Posicionado em local visível ao jogador
+Ao clicar no carro, o usuário registra valores recebidos, como:
 
-  6. Árvores / Vegetação (opcional - enriquecimento visual)
-     → Assets da Unity Asset Store (gratuitos)
+- corridas por aplicativo  
+- entregas  
+- trabalhos autônomos  
+- serviços prestados
 
-  7. Skybox
-     → Configurado com ambiente de cidade diurna
+### Despesa
 
-================================================================
-CONFIGURAÇÃO TÉCNICA
-================================================================
+Ao clicar no posto, o usuário registra gastos como:
 
-Versão do Unity : [ex: 2022.3.xx LTS]
-Render Pipeline : Universal Render Pipeline (URP)
-Plataforma      : Android (Meta Quest)
-SDK Instalado   : Meta XR SDK [versão]
-XR Plugin       : OpenXR / Oculus XR Plugin
+- combustível  
+- manutenção  
+- alimentação  
+- contas gerais
 
-MOVIMENTAÇÃO:
-  - Controlada pelo teclado no Unity Editor (PC)
-  - WASD ou setas para movimentar
-  - Mouse para rotacionar câmera
-  - Não depende dos óculos para funcionar no Editor
+### Regra Financeira
 
-================================================================
-ESTRUTURA DE PASTAS (Assets/)
-================================================================
+O saldo nunca pode ficar abaixo de zero.
 
-  Assets/
-  ├── _Scenes/
-  │   └── CidadeFinanceira.unity       (cena principal)
-  ├── Materials/
-  │   ├── MAT_Asfalto
-  │   ├── MAT_Predio
-  │   └── MAT_Painel
-  ├── Prefabs/
-  │   ├── PRE_Carro
-  │   ├── PRE_Posto
-  │   └── PRE_Predio
-  ├── Scripts/  (se houver)
-  └── Textures/
+### Fórmula Base
 
-================================================================
-COMO ABRIR O PROJETO
-================================================================
-
-  1. Instale o Unity Hub e a versão [X.X.XX LTS]
-  2. Clone o repositório:
-       git clone https://github.com/[seu-usuario]/cidade-financeira-vr
-  3. No Unity Hub, clique em "Add" e selecione a pasta clonada
-  4. Abra o projeto e aguarde a importação dos pacotes
-  5. Acesse a cena em: Assets/_Scenes/CidadeFinanceira.unity
-  6. Pressione Play para explorar o ambiente
-
-================================================================
-DIFICULDADES ENCONTRADAS E SOLUÇÕES
-================================================================
-
-  [Descreva aqui os problemas reais que você enfrentou]
-
-  Exemplo:
-  - Problema: XR Plugin Management não reconhecia o SDK
-    Solução: Reinstalação via Package Manager e reinício do Unity
-
-  - Problema: Objetos sem colisão caíam pelo chão
-    Solução: Adicionar componente Box Collider em cada prefab
-
-  - Problema: [...]
-    Solução: [...]
-
-================================================================
-REFLEXÃO SOBRE O APRENDIZADO
-================================================================
-
-  [Escreva 3 a 5 frases com suas palavras — isso vale 20% da nota]
-
-  Exemplo:
-  "Durante o desenvolvimento, aprendi que a organização da
-  hierarquia no Unity é tão importante quanto o resultado visual.
-  O maior desafio foi configurar o Meta XR SDK corretamente.
-  A ideia de representar finanças como objetos físicos me fez
-  pensar diferente sobre como comunicar informação em VR."
-
-================================================================
-PRÓXIMAS EVOLUÇÕES (visão futura do projeto)
-================================================================
-
-  - Integração com dados financeiros reais via API
-  - Multiplayer: outros usuários como personagens na cidade
-  - Compatibilidade total com Meta Quest (build Android)
-  - Economia tokenizada com Web3 (Fase futura)
-
-================================================================
+```text
+Saldo = Receitas - Despesas
