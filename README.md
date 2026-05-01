@@ -1,6 +1,7 @@
 # Projeto: Cidade Financeira VR
 
 ## Autor
+
 Armando Freire
 
 ---
@@ -9,23 +10,43 @@ Armando Freire
 
 Cidade Financeira VR é uma experiência interativa desenvolvida na Unity com o objetivo de representar situações financeiras do cotidiano por meio de elementos visuais dentro de uma cidade virtual.
 
-O projeto utiliza objetos 3D para transformar conceitos abstratos como receita, despesa, saldo e crescimento patrimonial em uma experiência prática e intuitiva.
+O projeto transforma conceitos abstratos como receita, despesa, saldo, patrimônio e obrigações financeiras em uma experiência prática, intuitiva e interativa.
 
-Além de atender aos requisitos técnicos da atividade proposta, o projeto também apresenta potencial de expansão futura para uma rede financeira digital integrada.
+Além de atender aos requisitos técnicos da atividade proposta, o projeto também apresenta visão futura para expansão como ambiente econômico digital inteligente.
 
 ---
 
-## Objetivo
+## Apresentando o Projeto
 
-Demonstrar conhecimentos fundamentais de XR / Unity através da criação de um ambiente navegável simples, organizado e interativo.
+O ambiente criado representa uma cidade temática no contexto de Metaverso voltada para educação financeira e organização pessoal.
 
-Aplicando:
+Ao invés de utilizar planilhas tradicionais, o usuário interage diretamente com objetos da cidade para compreender melhor sua realidade financeira.
 
-- manipulação de objetos 3D  
-- interfaces gráficas  
-- lógica em C#  
-- interação entre usuário e cenário  
-- estruturação de projeto Unity  
+Exemplos:
+
+- carro representa trabalho e geração de renda
+- posto representa gastos operacionais
+- cidade representa crescimento patrimonial
+- saldo representa situação econômica atual
+
+---
+
+## Contexto e Objetivos
+
+O projeto busca demonstrar como experiências imersivas podem tornar temas complexos mais acessíveis, agradáveis e motivadores.
+
+A proposta parte da ideia de que jogos incentivam pessoas a superar desafios, evoluir fases e buscar recompensas.
+
+Aplicando isso às finanças, o ambiente incentiva o usuário a:
+
+- organizar receitas
+- controlar despesas
+- quitar obrigações
+- construir patrimônio
+- melhorar hábitos financeiros
+- acompanhar evolução pessoal
+
+O foco principal não é vigiar terceiros, mas fortalecer a própria posição financeira do usuário.
 
 ---
 
@@ -46,8 +67,8 @@ Aplicando:
 ### XR / VR
 
 - XR Plugin Management instalado
-- OpenXR adicionado ao projeto
-- Estrutura compatível com futura integração Meta XR SDK
+- OpenXR configurado
+- Estrutura preparada para futura integração Meta XR SDK
 
 ### Build Settings
 
@@ -58,13 +79,13 @@ Projeto preparado para:
 
 ### Execução Inicial
 
-Toda movimentação e testes podem ser realizados no PC, sem depender exclusivamente de headset VR.
+Toda movimentação e testes funcionam no PC, sem depender exclusivamente de headset VR.
 
 ---
 
 ## Ambiente Virtual
 
-A cena desenvolvida contém múltiplos objetos 3D organizados de forma coerente:
+A cena foi organizada com múltiplos objetos 3D coerentes com ambiente urbano:
 
 - carro principal
 - posto de combustível
@@ -72,41 +93,31 @@ A cena desenvolvida contém múltiplos objetos 3D organizados de forma coerente:
 - prédios
 - postes
 - semáforos
-- elementos urbanos decorativos
+- elementos decorativos
 
-Também foi utilizado:
+Também foram utilizados:
 
-- plano de chão
-- ambiente urbano aberto
+- plano de chão navegável
 - skybox configurado
+- distribuição lógica dos objetos
 
 ---
 
-## Conceito Financeiro da Cena
+## Interação Implementada
 
-Cada objeto possui função econômica dentro do projeto:
+O projeto possui interação funcional em C# coerente com o tema escolhido.
 
-- **Carro** = fonte de receita
-- **Posto** = despesas operacionais
-- **Cidade** = evolução patrimonial
-- **Saldo** = resultado financeiro atual
+### Carro
 
----
-
-## Funcionamento Atual
-
-### Receita
-
-Ao clicar no carro, o usuário registra entradas financeiras, como:
+Ao clicar no carro, o usuário registra receitas obtidas por trabalho diário, como:
 
 - corridas por aplicativo
 - entregas
-- serviços prestados
-- trabalhos autônomos
+- serviços autônomos
 
-### Despesa
+### Posto
 
-Ao clicar no posto, o usuário registra gastos como:
+Ao clicar no posto, o usuário registra despesas, como:
 
 - combustível
 - manutenção
@@ -115,13 +126,11 @@ Ao clicar no posto, o usuário registra gastos como:
 
 ### Regra Financeira
 
-O sistema impede que o saldo fique negativo.
+O sistema impede saldo negativo.
 
 ### Fórmula Base
 
-
 Saldo = Receitas - Despesas
-
 
 ## Interface Gráfica
 
@@ -149,15 +158,37 @@ Foi mantida nomenclatura organizada e separação lógica dos arquivos.
 
 ---
 
+## Processo de Criação e Dificuldades
+
+O projeto foi desenvolvido progressivamente, começando pela montagem da cidade e posteriormente adicionando lógica financeira e interação.
+
+### Principais desafios encontrados:
+
+- configurar cliques em objetos 3D
+- integrar UI com cenário
+- organizar Canvas
+- configurar colliders
+- ajustar scripts em C#
+
+### Soluções aplicadas:
+
+- uso de Box Collider
+- scripts de interação
+- testes frequentes no Unity Editor
+- ajustes na hierarquia
+- correções de componentes
+
+---
+
 ## Aprendizados Aplicados
 
 Durante o desenvolvimento foram praticados:
 
 - criação de ambientes 3D
 - organização de cenas
-- lógica financeira básica
 - programação em C#
 - eventos de clique
+- lógica financeira básica
 - integração UI + objetos 3D
 - resolução de problemas técnicos
 
@@ -165,13 +196,14 @@ Durante o desenvolvimento foram praticados:
 
 # Expansão Futura / Visão do Projeto
 
-Além da proposta inicial da atividade, o projeto também foi pensado como base para expansão futura.
+Além da proposta inicial da atividade, o projeto também foi pensado como base para evolução futura.
 
 ## Fase 1 — Simulação Financeira Individual
 
 - receitas
 - despesas
 - saldo
+- controle pessoal
 
 ## Fase 2 — Crescimento Patrimonial
 
@@ -182,32 +214,31 @@ Além da proposta inicial da atividade, o projeto também foi pensado como base 
 
 ## Fase 3 — Sistema Social Financeiro
 
-- valores a receber
-- valores a pagar
-- dívidas entre usuários
 - divisão de despesas
+- pagamentos entre usuários
+- obrigações pendentes
+- relações econômicas privadas
 
-## Fase 4 — Rede Financeira Web3 Integrada
+## Fase 4 — Rede Financeira Digital Integrada
 
-Possível evolução para uma infraestrutura financeira digital descentralizada.
+Possível evolução para ambiente descentralizado onde cada usuário acessa apenas informações que realmente lhe pertencem.
 
 ### Conceito
 
-Cada participante acessaria apenas as informações que lhe pertencem.
+Mais importante do que acompanhar terceiros é visualizar:
 
-### Exemplos
-
-- cliente visualiza seu saldo
-- cliente visualiza quem lhe deve
-- cliente visualiza para quem deve
-- banco acessa somente dados autorizados
-- terceiros não acessam informações privadas
+- o que possui
+- o que ganhou
+- o que gastou
+- o que precisa pagar
+- como está evoluindo financeiramente
 
 ### Benefícios
 
 - privacidade segmentada
 - autonomia financeira
 - histórico validado
+- experiência gamificada
 - economia entre usuários
 - interoperabilidade futura
 
@@ -215,6 +246,6 @@ Cada participante acessaria apenas as informações que lhe pertencem.
 
 ## Conclusão
 
-Cidade Financeira VR atende aos requisitos técnicos propostos na atividade ao demonstrar criação de ambiente XR inicial, cena navegável, organização estrutural e interação funcional.
+Cidade Financeira VR atende aos requisitos técnicos propostos na atividade ao demonstrar criação de ambiente XR inicial, cena temática navegável, organização estrutural e interação funcional.
 
-Além disso, o projeto apresenta visão criativa ao transformar educação financeira em experiência visual interativa, com potencial futuro para expansão social, patrimonial e integração Web3.
+Além disso, apresenta visão criativa ao transformar educação financeira em experiência interativa, mostrando como ambientes imersivos podem motivar pessoas a superar barreiras financeiras e evoluir economicamente.
