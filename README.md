@@ -6,13 +6,12 @@
 
 AUTOR
 -----
-Nome: [Seu Nome Completo]
-Turma: [Sua Turma]
-Data de Entrega: [Data]
+Armando Freire
+
 
 REPOSITÓRIO
 -----------
-Link do GitHub: https://github.com/[seu-usuario]/cidade-financeira-vr
+
 
 ================================================================
 DESCRIÇÃO DO PROJETO
