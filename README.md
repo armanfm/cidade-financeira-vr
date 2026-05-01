@@ -52,7 +52,7 @@ O saldo nunca pode ficar abaixo de zero.
 
 ### Fórmula Base
 
-```text
+
 Saldo = Receitas - Despesas
 
 # Fase 2 — Rede Financeira Web3 Integrada
