@@ -139,3 +139,80 @@ A cidade virtual pode representar em tempo real:
 - evolução de renda  
 - relações econômicas ativas  
 - expansão da cidade conforme saldo
+
+# Configuração Técnica do Projeto
+
+O projeto foi desenvolvido na **Unity 6**, utilizando ambiente compatível com experiências XR e preparado para futura integração com dispositivos Meta Quest.
+
+## Estrutura Técnica Implementada
+
+### Engine Utilizada
+
+- Unity 6 (LTS)
+- Projeto configurado em ambiente 3D
+
+### Plataforma de Destino
+
+- Windows (testes no editor)
+- Android / Meta Quest (estrutura preparada)
+
+### XR / VR
+
+- XR Plugin Management adicionado ao projeto
+- Pacotes OpenXR instalados
+- Estrutura inicial para integração com Meta XR SDK
+- Projeto funcional também no PC, permitindo testes sem headset VR
+
+### Build Settings
+
+Configuração preparada para exportação futura em:
+
+- Android
+- Windows Standalone
+
+### Cena Principal Desenvolvida
+
+Ambiente virtual urbano contendo:
+
+- veículo principal (Car9)
+- posto de combustível
+- prédios
+- ruas
+- semáforos
+- postes
+- elementos decorativos
+
+Atendendo o requisito mínimo de múltiplos objetos 3D na cena.
+
+### Sistema de Interação
+
+Foi implementado sistema de interação por clique utilizando C#:
+
+#### Carro
+
+Representa geração de receita.
+
+Ao clicar no carro, o usuário acessa painel para registrar entradas financeiras.
+
+#### Posto
+
+Representa despesas.
+
+Ao clicar no posto, o usuário acessa painel para registrar gastos.
+
+### Interface Gráfica
+
+Desenvolvida com Canvas UI contendo:
+
+- painéis de receita
+- painéis de despesa
+- campo de entrada de valores
+- botões de confirmação
+- exibição de saldo
+
+### Lógica Financeira
+
+Sistema programado em C# com regras:
+
+```text
+Saldo = Receitas - Despesas
